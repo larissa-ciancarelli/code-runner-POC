@@ -5,7 +5,7 @@ import Editor from './Editor.jsx'
 const App = () => {
   return (
     <div id='app'>
-      <h2>This is the App</h2>
+      <h2>Hello would you like to code? :)</h2>
       <Editor />
     </div>
   )

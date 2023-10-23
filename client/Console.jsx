@@ -1,20 +1,33 @@
 import React from 'react';
 
 const Console = ({ content }) => {
-  const items = ['hello'];
+  const items = [];
 
-  content.forEach(obj => {
-    items.push(<li>{obj.record}</li>);
+  content.forEach((obj, i) => {
+    items.push(<li className={obj.type === 'err' ? 'err' : 'log'}
+    key={obj.record + `${i}`}
+    >{obj.record}</li>);
   })
   
   return (
-  <div>
-    <ol>
+  <div id='console' style={style}>
+    <ul className='console-items'>
       {items}
-    </ol>
+    </ul>
   </div>
   )
 };
+
+const style = {
+  overflowy: scroll,
+  border: '1px solid',
+  maxheight: '50px',
+  height: '50px',
+  width: '428px',
+  margin: '10px 0 0 0',
+}
+
+
 
 // return (
 //   <div id="console-output">

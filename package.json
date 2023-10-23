@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.js",
     "build": "webpack",
-    "dev": "webpack serve --open"
+    "dev": "NODE_ENV=development node server/server.js & NODE_ENV=development webpack serve"
   },
   "author": "Larissa C",
   "license": "ISC",
