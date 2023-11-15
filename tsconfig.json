@@ -4,12 +4,12 @@
     "noImplicitAny": true,
     "module": "commonjs",
     "target": "es5",
-    "jsx": "react-jsx",
+    "jsx": "react",
     "allowJs": true,
     "moduleResolution": "node",
     "esModuleInterop": true
   },
-  "include": ["**/*.ts", "**/*.js", "client/Editor.jsx", "client/App.jsx", "client/TestCases.jsx"],
+  "include": ["client"],
   "exclude": ["node_modules", "dist"]
 }
 
